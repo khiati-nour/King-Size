@@ -11,7 +11,6 @@ body {
 }
 
 .signInBtn{
-    background-color : rgb(73, 82, 27);
     width:70px;
     margin-left:90%;
     cursor: pointer;

@@ -22,6 +22,7 @@ import Resetpassword from '../Resetpassword/Resetpassword.js'
 import GameIndex from '../game/GameIndex'
 import GameFr from '../game/GameFr';
 import GameDe from '../game/GameDe';
+import Home from '../Home/Home.js';
 
 
 import PrivateRoute from '../routing/PrivateRouting'
@@ -68,9 +69,10 @@ function Navbar() {
         <Router>
       
         <nav className='navbar'>
-        <Link to='/Main' className='navbar-logo' onClick={closeMobileMenu} >
-        <img src="./images/logo_size_invert.jpg" alt="" className="img-responsive"/>
-
+        <Link to='/' className='navbar-logo' onClick={closeMobileMenu} >
+        <div className="website-logo-div">
+        <img src="./images/Logo-triangle.png" alt="" className="img-logo"/>
+        </div>
         </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -78,8 +80,8 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
          
             <li className='nav-item'>
-              <Link to='/main' className='nav-links' onClick={closeMobileMenu}>
-                Main
+              <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
+                Home
               </Link>
             </li>
            
@@ -115,7 +117,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={logoutHandler}
               >
-                Log out
+                Log Out
               </Link>
             </li>
             )}
@@ -123,7 +125,7 @@ function Navbar() {
           </ul>
           {!isLoggedIn && (
           <Link to='Signup'>
-      <button className='btn1'>SIGN UP</button>
+      <button className='btn1'>Sign Up</button>
     </Link>
           )}
         </nav>
@@ -131,7 +133,7 @@ function Navbar() {
     
         <Route exact path="/" component={Main} />  
 
-      <Route path="/main" exact component={Main}/>
+      <Route path="/Home" exact component={Home}/>
       <Route path="/join" exact component={Join} />
       <Route path="/chat" exact component={Chat} />
       <Route path="/login" exact component={Login}/>

@@ -8,7 +8,7 @@ function GameDetails() {
         <div className="entire-div">
         <div className="content-section">
             <div className="inner-wrapper">
-                <h1>Here are some steps for your guidance to attent to this event</h1>
+                <h1>Here are some steps for your guidance to attent this event</h1>
                 <p className="step"><span className="follow-steps-span"><i class="fas fa-shoe-prints" ></i></span> Choose your language group to join </p>
                 <p className="step"><span className="follow-steps-span"><i class="fas fa-shoe-prints"></i></span> Decide with your group which game to play before meet up & bring it with you</p>
                 <p className="step"><span className="follow-steps-span"><i class="fas fa-shoe-prints"></i></span> Enjoy the company & try speaking only in English</p>

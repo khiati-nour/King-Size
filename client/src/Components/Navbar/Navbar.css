@@ -4,8 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-    background-color:rgba(19,151,213,255);
+    font-size: rem;
+    background-color:#d9faff!important;
   }
   
   .navbar-logo {
@@ -49,16 +49,23 @@
   }
   
   .nav-links {
-    color: white;
+    color:#00367d;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
   }
   
   .nav-links:hover {
-    background-color: #1888ff;
+    background-color: #00367d;
     border-radius: 4px;
     transition: all 0.2s ease-out;
     text-decoration:none;
+    color:whitesmoke;
   }
   
   .fa-bars {
@@ -158,10 +165,34 @@
       display: none;
     }
   }
-.img-responsive{
+.img-logo{
   height: auto;
   width: auto;
-  max-height: 90px;
-  max-width: 250px;
+  max-height: 15vh;
+  max-width: 15vh;
+  display: block;
+}
+.website-logo-div{
+  overflow: hidden;
+
 }
 
+.card-title h3{
+  -webkit-text-fill-color: rgb(5, 43, 43);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(199, 243, 212, 0.808);
+}
+@media screen and (max-width:1024px){
+  .img-logo{
+    max-height:15vw;
+    max-width:9vw;
+
+  }
+}
+@media screen and (max-width:480px) {
+  .img-logo {
+    max-height: 25vw;
+    max-width: 18vw;
+
+  }
+}

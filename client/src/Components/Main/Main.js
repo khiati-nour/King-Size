@@ -10,8 +10,8 @@ class  Main extends React.Component {
       return (
       
             <div className='main-container container--narrow'> 
-               <div className="world">
-                 <img className="world-image" src="images/Optimized-world3.jpg" alt="world map image"/>
+               <div className="world-image"> 
+               <p>`</p>
                  </div>
 
               <div className='main-body'>    
@@ -20,7 +20,7 @@ class  Main extends React.Component {
                     <span>Discover</span><br/> our language<br/> activities with<br/> <strong> Speacty!</strong>   
                     </p>
                     <div className="main-divbutton">
-                   <Link className="main-button"to='/Login'>JOIN US</Link>
+                   <Link className="main-button"to='/Signup'>JOIN US</Link>
                   </div>
                   </div>
               </div>

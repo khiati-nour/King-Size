@@ -1,7 +1,7 @@
 
 
 .card-deck{
-    margin-top :5rem;
+    margin-top:3rem;
     display:grid;
     grid-template-columns: 20% 20% 20%;
     justify-content: space-evenly; 
@@ -10,11 +10,13 @@
 
 .card-container{
     width: 300px;
+    height:auto;
     overflow:hidden;
     box-shadow:0px 0px 15px -5px;
     transition: 0.5s;
     animation: ease-in;
-    background-color: #1DC690;
+    background-image: linear-gradient(#d9faff, rgba(15, 4, 228, 0.904));
+    color:white;
     padding-top:2rem;
 
 
@@ -65,7 +67,9 @@ h3,p{
 .link-btn{
     text-decoration: none!important;
     padding:0.5rem;
-    background-color:#1B9CFC;
+    background-color:#022450;
+;
+    color:white;
     border:none;
     transition: 0.2s;
     margin-bottom: 0.5rem;
@@ -80,7 +84,7 @@ h3,p{
 }
 
 a{
-    text-transform:uppercase;
+    text-transform:capitalize;
     color:#1B9CFC;
     text-decoration: none;
 }

@@ -16,7 +16,7 @@
 
     width:48%;
     float:right;
-    background-color:rgba(19,151,213,255);
+    background-color:#00367d;
     padding:50px;
 
 
@@ -29,9 +29,9 @@
 }
 
 .gameIndex {
- font-size: 20px;
+ font-size: 15px;
  color:white;
- background-color:darkblue;
+ background-color:rgb(172, 47, 255);
 }
 
 
@@ -41,7 +41,7 @@
         padding:80px;
     }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:780px){
     .content-section{
         padding:0;
     }

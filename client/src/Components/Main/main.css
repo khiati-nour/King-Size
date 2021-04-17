@@ -1,38 +1,52 @@
-    
+/*  
+$desktop:1200px;
+$laptop:1024px;
+$tablet:768px;
+$phone:480px; */
+/* @media only screen and (max-width: 1024px) { */
+
 *{
     margin:0;
     padding:0;
     box-sizing:0;
+
     
 }
 
-.world-image{
-    height:calc(350px + 20vw);
-    width:100vw;
-
+html,body {
+    height:100%;
 
 }
 
+
+
+
+.main-container {
+background: no-repeat url("world.jpg");
+background-size:cover;
+background-position:center;
+height:100%;
+
+}
 
 .main-container{
     font-family:'Kanit', sans-serif;
     margin:0 auto; 
     overflow:hidden; 
+
 }
+
 .main-body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-   
 
 }
 
-
-
 .main-divtext{
 
-    color:#1C4670;
+    color:#00367d;
     font-size:55px;
     font-weight: 800;
     letter-spacing:2px;
@@ -69,12 +83,17 @@
     align-content: center;
 }
 
+
 .main-button{
     position: relative;
     left:-100%;
     animation: anim 2s forwards 1s;
     text-transform: uppercase;
     letter-spacing: 1px;
+    background-color: #1DC690;
+    border-radius:16px ;
+    margin:30px;
+
 }
 
 .main-button{
@@ -85,7 +104,7 @@
     display:flex;
     justify-content: center;
     align-content: center;
-    color:#1C4670;
+    color:white;
     font-size: 30px;
 }
 
@@ -96,9 +115,10 @@
     left:0;
     width: 10px;
     height:10px;
-    border-top: 5px solid #1DC690;
-    border-left: 5px solid #1DC690;
+    border-top: 5px solid #00367d;
+    border-left: 5px solid #00367d;
     transition: 0.5s;
+
 }
 
 .main-button:after{
@@ -108,15 +128,15 @@
     right:0;
     width: 10px;
     height:10px;
-    border-bottom: 5px solid #1DC690;
-    border-right: 5px solid #1DC690;
+    border-bottom: 5px solid #00367d;
+    border-right: 5px solid #00367d;
     transition: 0.5s;
 }
 
 .main-button:hover{
-    background: #1DC690;
-    color:whitesmoke;
-    box-shadow: 0 0 50px #1DC690;
+    background:#00367d;
+    color:white;
+    box-shadow: 10px 0 50px #000505;
 }
     
 .main-button:hover:before{
@@ -143,32 +163,126 @@ strong{
 }
 
 
-@media all and (max-width:660px){
-    .main-divtext{
-        color:#122538;
-        font-size:15px;
+
+
+@media only screen and (max-width: 768px) {
+
+    .main-divtext {
+        color: #00367d;
+        font-size: 50px;
         font-weight: 800;
-        letter-spacing:2px;
-        line-height:30px;
-        margin-bottom: 10px;
-        position:absolute;
-        top:200px;
-        left:50px;
-        opacity: 0.8;
-    }
-    .main-text{
-        margin:20px;
-        font-size:30px;
-    }
-    span{
-        font-size:40px;
-    }
-    strong{
-        letter-spacing: 4px;
-    }
-    .main-button{
-        font-size:15px;
+        letter-spacing: 2px;
+        line-height: 60px;
+        margin-bottom: 30px;
+        position: absolute;
+        top: 350px;
+        left: 220px;
+        opacity: 0.9;
 
     }
-   
+
+    .main-divtext span {
+        font-size: 80px;
+
+
+    }
+
+    strong {
+        letter-spacing: 18px;
+    }
 }
+@media only screen and (max-width: 1024px) {
+
+    .main-divtext {
+
+    color:#00367d;
+    font-size:80px;
+    font-weight: 800;
+    letter-spacing:2px;
+    line-height:85px;
+    margin-bottom: 30px;
+    position:absolute;
+   top:500px;
+   left:250px;
+   opacity: 0.9;
+    opacity: 0.9;
+
+    }
+
+    .main-divtext span {
+        font-size: 130px;
+
+
+    }
+      .main-text {
+          left: -80%;
+          animation: anim 2s forwards 1s;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+      }
+
+    strong {
+        letter-spacing: 24px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+.main-divtext {
+    color:#00367d;
+    font-size:50px;
+    font-weight: 800;
+    letter-spacing:2px;
+    line-height:60px;
+    margin-bottom: 30px;
+    position:absolute;
+    top:300px;
+    left:210px;
+    opacity: 0.9;
+
+}
+.main-divtext  span{
+    font-size: 80px;
+
+
+}
+strong{
+    letter-spacing:18px;
+}
+}
+
+@media screen and (max-width:480px) {
+    .main-divtext {
+        color: #00367d;
+        font-size: 35px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        line-height: 35px;
+        margin-bottom: 30px;
+        position: absolute;
+        top: 180px;
+        left: 20px;
+        opacity: 0.9;
+
+    }
+    .main-text {
+  left:-50%;
+  animation: anim 2s forwards 1s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+    }
+    .main-divtext span {
+        font-size: 43px;
+
+
+    }
+
+    strong {
+        letter-spacing: 8px;
+    }
+    }
+
+
+
+
+    

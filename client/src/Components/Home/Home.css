@@ -1,0 +1,142 @@
+.big{
+
+background-image: linear-gradient(#d9faff, rgba(19, 141, 141, 0.377)),
+url("hola.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+height:100vh;
+height:100%;
+display: -webkit-flex;
+display: flex;
+-webkit-flex-direction: column;
+flex-direction: column;
+color:white;
+-webkit-clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 75%, 0 0);
+clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+}
+
+.big:hover {
+background-image: linear-gradient(rgb(244, 244, 247), rgba(27, 19, 141, 0.377)),url("hola.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+height: 100vh;
+height: 100%;
+display: -webkit-flex;
+display: flex;
+-webkit-flex-direction: column;
+flex-direction: column;
+color:white;
+-webkit-clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 75%, 0 0);
+clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+}
+ 
+
+.title-text , .paragraph-text{
+display:flex;
+justify-content:center;
+align-items: center;
+}
+
+
+.text-home-title {
+width:95vw;
+padding-top:5vw;
+
+
+}
+.text-home-title h1{
+font-size:3.5vw;
+color: black;
+-webkit-text-fill-color: white;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgb(145, 86, 179);
+}
+
+
+.text-home-para h4 {
+width:55vw;
+padding-top:8px;
+font-size:2vw;
+color: rgb(155, 146, 146);
+-webkit-text-fill-color: white;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+
+}
+
+
+@media only screen and (max-width: 480px){
+    .text-home-para h4 {
+        font-size:16px;
+        color:white;
+        margin:2px;
+        color: rgb(155, 146, 146);
+        -webkit-text-fill-color: grey;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(230, 137, 180);
+    }
+
+    .text-home-title h1 {
+        font-size:25px;
+        margin:10px;
+         color: rgb(155, 146, 146);
+         -webkit-text-fill-color: grey;
+         -webkit-text-stroke-width: 1px;
+         -webkit-text-stroke-color: rgb(173, 137, 230);
+    }
+
+
+}
+@media only screen and (max-width: 780px) {
+    .text-home-para h4 {
+        font-size: 20px;
+        color: white;
+        margin: 2px;
+        color: rgb(155, 146, 146);
+        -webkit-text-fill-color: grey;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(230, 137, 180);
+    }
+
+    .text-home-title h1 {
+        font-size: 30px;
+        margin: 10px;
+        color: rgb(155, 146, 146);
+        -webkit-text-fill-color: grey;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(173, 137, 230);
+    }
+
+
+}
+@media only screen and (max-width: 1024px) {
+    .text-home-para h4 {
+        font-size: 25px;
+        color: white;
+        margin: 2px;
+        color: rgb(155, 146, 146);
+        -webkit-text-fill-color: grey;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(230, 137, 180);
+    }
+
+    .text-home-title h1 {
+        font-size: 35px;
+        margin: 10px;
+        color: rgb(155, 146, 146);
+        -webkit-text-fill-color: grey;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(173, 137, 230);
+    }
+
+
+}
+
+
+
+
+
+
+

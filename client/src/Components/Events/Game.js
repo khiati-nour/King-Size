@@ -19,7 +19,7 @@ class Game extends React.Component {
         <div className="game-container">
             <div className="text-container">
                 <div className="question-div">
-                    <h1 className="question">Does Playing Games To Practise Your English Sounds Fun To You ?</h1>
+                    <h1 className="question">Do Playing Games To Practise Your English Sounds Fun To You ?</h1>
                 </div>
                 <ImageSlider slides={SliderData}/>
                 
@@ -32,7 +32,7 @@ class Game extends React.Component {
             </div>
 
             <div className="learn-more-div">
-                <Button className="learn-more-btn" href="/GameDetails" variant="warning">Learn More</Button> 
+                <Button className="learn-more-btn" href="/GameDetails" variant="primary">Learn More</Button> 
             </div>
         </div>
         )

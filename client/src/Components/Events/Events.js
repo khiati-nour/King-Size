@@ -43,7 +43,7 @@ function Events() {
         <h3> Meet & Play a game with other learners</h3>
         </div>  
         <div className='class-body'>
-        <p> Time to have an outdoor activity,play any game you want,but speak only French! </p>
+        <p> Time to have an outdoor activity.Play any game you want but speak only English! Learn while playing. </p>
         </div>
         <div className='btn'>
         <Link className="link-btn" to='/Game'>View More</Link>
@@ -63,11 +63,7 @@ function Events() {
                 <div className='class-body'>
                    <p> The best opportunity to practice a language is to debate about any subject with other learners </p>
                 </div>
-                
-      
-      
-              
-                
+            
                 <div className='btn'>
                 <Link className="link-btn" to='/join'>View More</Link>
                 </div>
