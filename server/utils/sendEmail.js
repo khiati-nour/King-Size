@@ -9,7 +9,7 @@ const sendEmail = (options)  => {
         }
     })
     const mailOptions = {
-        from: process.env.EMAIL_FROM || 'khiatihouda@gmail.com',
+        from: process.env.EMAIL_FROM,
         to: options.to,
         subject: options.subject,
         html: options.text,
