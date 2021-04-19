@@ -16,7 +16,7 @@ const protect = async(req, res, next)=>{
         .json({success: false, error: "Not authoriwed to acces this route"});
     }
     try{
-        const decoded = jwt.verify(token, process.env.JWT_SECRET || "d946f6ba67f95bc7d8df1013e83fbe57476b6fb239b76d4273d68ddb5834f41d5b7576");
+        const decoded = jwt.verify(token, process.env.JWT_SECRET );
         const user = await User.findById(decoded.id);
         if(!user){
             res
